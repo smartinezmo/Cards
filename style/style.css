@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Cards*/
+
+.images-cards {
+  background-image: url("/Ejercicio_1_Card/images/bg-main-mobile.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.image-card {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.back {
+  background-color: #d2d5db;
+  padding-top: 16px;
+  margin: 0 auto;
+}
+
+.back .barcode {
+  width: 100%;
+  height: 40px;
+  background-color: #2e2f2e;
+}
+
+.back .cvc {
+  width: 80%;
+  background-color: #adb7be;
+  margin: 30px auto;
+  text-align: right;
+  padding: 10px;
+}
+
+.back .cvc span {
+  color: #cfd6df;
+  font-size: 18px;
+}
+
+.front {
+  background-image: url(/Ejercicio_1_Card/images/bg-card-front.png);
+  background-size: cover;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.image-card-circles {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.circle-1 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.circle-2 {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+.number-card-front {
+  color: #eae0fe;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.number-card-front span {
+  background-color: transparent;
+  color: #eae0fe;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.data-user-card-front {
+  display: flex;
+  justify-content: left;
+}
+.data-user-card-front span,div {
+  color: #eae0fe;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.name-card-front {
+  flex: content;
+}
+
+/*Form*/
+
+form {
+  padding: 0 20px 10px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.user-data-group {
+  margin: 10px 0 10px;
+}
+
+.user-data-group label {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.user-data-group input,select {
+  display: block;
+  width: 100%;
+  border: 2px solid #dadbdb;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.input-inline {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-inline .user-data-group {
+  flex-basis: 50%;
+}
+
+.user-data-group input::placeholder,select,option {
+  color: #dadbdb;
+  font-weight: 600;
+}
+
+.user-data-group.exp-date {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.user-data-group.exp-date label {
+  flex-basis: 100%;
+}
+
+.user-data-group.exp-date input,select {
+  flex-basis: 45%;
+}
+
+button {
+  width: 80%;
+  border: 0px solid #22092f;
+  background-color: #22092f;
+  border-radius: 5px;
+  color: #dadbdb;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 40px;
+  padding: 10px;
+}
+
+.error-message{
+  color: rgba(255, 0, 0, 0.694);
+  text-transform: capitalize;
+  display: none;
+}
+
